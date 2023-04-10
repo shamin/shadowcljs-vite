@@ -5,8 +5,15 @@
   "devDependencies": {
     "shadow-cljs": "2.22.10"
   },
+  "scripts": {
+    "shadow-dev": "npx shadow-cljs watch frontend",
+    "vite-dev": "vite",
+    "vite-build": "vite build",
+    "vite-preview": "vite preview"
+  },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite": "^4.2.1"
   }
 }

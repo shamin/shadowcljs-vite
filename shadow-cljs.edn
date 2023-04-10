@@ -7,10 +7,11 @@
  :dependencies
  []
 
- :dev-http {9000 "public"}
-
   :builds
  {:frontend
   {:target :browser
    :modules {:main {:init-fn app.main/init}}
-   }}}
+   :js-options {:anon-fn-naming-policy :unmapped
+                             :js-provider :external
+                             :external-index "target/index.js"
+                             :external-index-format :esm}}}}
