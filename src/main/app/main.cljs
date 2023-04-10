@@ -1,13 +1,11 @@
 (ns app.main
-(:require
-           ["react" :as react]
-           ["react-dom/client" :as react-dom]))
+  (:require 
+   [reagent.dom :as rd]))
+
+
+(defn main-component []
+  [:h1.text-3xl.font-bold.underline "Hello world!"])
+
 
 (defn init []
-(println "React" react-dom)
-    (let [app-node (.getElementById js/document "root")
-  root (react-dom/createRoot app-node)
-  ]
-    (.render root "Hello World!")))
-
-;; (main)
+  (rd/render [main-component] (.getElementById js/document "root")))
