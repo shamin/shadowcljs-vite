@@ -1,10 +1,13 @@
 (ns app.main
-  (:require 
+  (:require
+   [app.page.components :refer [less-heading]]
    [reagent.dom :as rd]))
 
 
 (defn main-component []
-  [:h1.text-3xl.font-bold.underline "Hello world!"])
+  [:div
+   [:h1.text-3xl.font-bold.underline "Tailwind heading"]
+   [less-heading]])
 
 
 (defn init []

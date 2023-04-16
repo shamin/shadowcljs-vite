@@ -1,2 +1,2 @@
 import './target/index'
-import './style.css'
+import './src/main/app/main.less'
